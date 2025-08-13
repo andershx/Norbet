@@ -1,5 +1,5 @@
-/** Lightweight FX helpers for client-side celebrations */
 export function celebrate(amount: number) {
-  if (typeof window === 'undefined') return;
-  window.dispatchEvent(new CustomEvent('norbet:win', { detail: { amount } }));
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('norbet:celebrate', { detail: { amount } }));
+  }
 }
