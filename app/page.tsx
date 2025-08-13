@@ -1,20 +1,29 @@
 import Link from "next/link";
+import { GameCard } from "@/components/game/GameCard";
+
 export default function Home(){
   return (
     <div className="space-y-6">
-      <section className="card p-8 text-center">
-        <h1 className="text-3xl font-bold mb-2">Welcome to Norbet (Demo)</h1>
-        <p className="text-white/70 max-w-2xl mx-auto">Deploy-ready demo casino. Runs in Demo Mode; Stripe test and Coinbase sandbox available via env keys.</p>
-        <div className="flex gap-3 justify-center mt-6">
-          <Link href="/casino" className="btn">Play Dice</Link>
-          <Link href="/casino#crash" className="btn btn-outline">Try Crash</Link>
-          <Link href="/deposit" className="btn">Deposit (Test)</Link>
+      <section className="hero">
+        <h1 className="text-3xl font-extrabold mb-2">Welcome to Norbet</h1>
+        <p className="text-ink/70 max-w-2xl">A vibrant, demo crypto casino UI with modern gradients and glass surfaces. Deploy-ready on Vercel. No real-money features enabled.</p>
+        <div className="flex gap-3 mt-6">
+          <Link href="/casino" className="btn">Enter Casino</Link>
+          <Link href="/deposit" className="btn btn-outline">Deposit (Test)</Link>
         </div>
       </section>
-      <section className="grid md:grid-cols-3 gap-4">
-        <div className="card"><h3 className="font-semibold mb-1">Provably Fair</h3><p className="text-sm text-white/70">Server & client seeds with HMAC-SHA256.</p></div>
-        <div className="card"><h3 className="font-semibold mb-1">Crypto & Cards (Test)</h3><p className="text-sm text-white/70">Stripe test cards and Coinbase sandbox.</p></div>
-        <div className="card"><h3 className="font-semibold mb-1">Responsible Gaming</h3><p className="text-sm text-white/70">Age/cooldowns/limits — demo toggles.</p></div>
+
+      <section className="space-y-3">
+        <div className="flex items-center justify-between">
+          <h2 className="font-semibold">Trending Games</h2>
+          <Link className="text-sm text-ink/70 hover:underline" href="/casino">See all</Link>
+        </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <GameCard title="Dice" href="/casino#dice" tag="Classic"/>
+          <GameCard title="Crash" href="/casino#crash" tag="Hot"/>
+          <GameCard title="Mines" href="/casino#mines" tag="Chill"/>
+          <GameCard title="Limbo" href="/casino#limbo" tag="Low house edge"/>
+        </div>
       </section>
     </div>
   );

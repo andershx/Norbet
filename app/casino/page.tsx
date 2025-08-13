@@ -9,12 +9,11 @@ export default function Casino(){
   return (
     <div className="space-y-8">
       <h1 className="text-2xl font-bold">Casino</h1>
-      <Dice/>
-      <div id="crash"/>
-      <Crash/>
-      <Mines/>
-      <Limbo/>
-      <Plinko/>
+      <div id="dice"/><Dice/>
+      <div id="crash"/><Crash/>
+      <div id="mines"/><Mines/>
+      <div id="limbo"/><Limbo/>
+      <div id="plinko"/><Plinko/>
     </div>
   );
 }
