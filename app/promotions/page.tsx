@@ -1,0 +1,1 @@
+export default function Promotions(){return <div className='card'>Claim daily faucet and rakeback (demo).</div>}

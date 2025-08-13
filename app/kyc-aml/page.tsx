@@ -1,0 +1,1 @@
+export default function KYC(){return <div className='card'>KYC/AML policy placeholder.</div>}

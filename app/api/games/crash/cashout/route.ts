@@ -1,0 +1,2 @@
+import { NextRequest, NextResponse } from "next/server"; import { getSession } from "@/lib/auth"; import { readDB, writeDB } from "@/lib/demo-db";
+export async function POST(req: NextRequest){ const { at=1.0, wager=1 } = await req.json(); const s = getSession(); const db = readDB(); const u = db.users[s.uid] || { id:s.uid, balance:100, vipPoints:0, clientSeed:'client' }; const payout = Math.max(0, at) * wager; u.balance += payout; writeDB(db); return NextResponse.json({ ok:true, payout }); }

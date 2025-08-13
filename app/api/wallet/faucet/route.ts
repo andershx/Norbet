@@ -1,0 +1,2 @@
+import { NextResponse } from "next/server"; import { getSession } from "@/lib/auth"; import { readDB, writeDB } from "@/lib/demo-db";
+export async function POST(){ const s = getSession(); const db = readDB(); const u = db.users[s.uid] || { id:s.uid, balance:0, vipPoints:0, clientSeed:'client' }; u.balance += 10; db.users[s.uid]=u; writeDB(db); return NextResponse.json({ ok:true, balance:u.balance }); }

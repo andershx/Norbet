@@ -1,0 +1,1 @@
+export default function Blog(){return <div className='card'>Blog — add your content here.</div>}

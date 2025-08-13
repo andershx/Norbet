@@ -1,0 +1,1 @@
+export default function Help(){return <div className='card'>Help Center & Support (demo).</div>}

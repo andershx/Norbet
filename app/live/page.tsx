@@ -1,0 +1,1 @@
+export default function Live(){return <div className='card'>Live Casino — placeholder (demo).</div>}

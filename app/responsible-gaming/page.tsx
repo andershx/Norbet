@@ -1,0 +1,1 @@
+export default function RG(){return <div className='card space-y-3'><h2 className='text-xl font-semibold'>Responsible Gaming</h2><div className='flex gap-2'><button className='btn btn-outline'>Set Limit</button><button className='btn btn-outline'>Cooldown 24h</button><button className='btn btn-outline'>Self-Exclude</button></div></div>}

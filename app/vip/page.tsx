@@ -1,0 +1,1 @@
+export default function VIP(){return <div className='card'>VIP tiers & rewards (demo).</div>}

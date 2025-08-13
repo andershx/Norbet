@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { color-scheme: dark; }
+html, body { @apply bg-surface text-white; }
+.container-xl { @apply max-w-7xl mx-auto px-4; }
+.btn { @apply inline-flex items-center justify-center rounded-2xl px-4 py-2 font-medium shadow-soft transition bg-brand hover:bg-brand-dark; }
+.btn-outline { @apply border border-white/10 hover:border-white/25 bg-transparent; }
+.card { @apply bg-panel rounded-2xl p-4 shadow-soft border border-white/5; }
+.input { @apply bg-panel border border-white/10 rounded-xl px-3 py-2 outline-none focus:border-brand; }
+.link { @apply text-brand hover:underline; }
+.badge { @apply text-xs px-2 py-1 rounded bg-white/10; }
+table.table { @apply w-full text-sm; }
+table.table th, table.table td { @apply px-3 py-2 border-b border-white/10; }

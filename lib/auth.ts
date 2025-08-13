@@ -1,0 +1,15 @@
+import jwt from 'jsonwebtoken'; import { cookies } from 'next/headers';
+const SECRET = process.env.JWT_SECRET || 'dev-secret-not-secure';
+export type Session = { uid: string; name: string };
+export function getSession(): Session {
+  const token = cookies().get('norbet_session')?.value;
+  if(!token) return createGuest();
+  try { return jwt.verify(token, SECRET) as Session; } catch { return createGuest(); }
+}
+export function createGuest(): Session {
+  const uid = 'u_' + Math.random().toString(36).slice(2, 10);
+  const session: Session = { uid, name: 'Guest' };
+  const token = jwt.sign(session, SECRET, { expiresIn: '30d' });
+  cookies().set('norbet_session', token, { httpOnly: true, secure: true, sameSite: 'lax', path: '/' });
+  return session;
+}
