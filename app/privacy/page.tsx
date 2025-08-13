@@ -1,1 +1,0 @@
-export default function Privacy(){return <div className='card'>Privacy policy placeholder.</div>}

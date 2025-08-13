@@ -1,1 +1,0 @@
-export default function Sports(){return <div className='card'>Sportsbook — placeholder.</div>}

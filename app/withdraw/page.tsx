@@ -1,1 +1,0 @@
-export default function Withdraw(){return <div className='card'>Withdrawals disabled in demo mode.</div>}

@@ -1,1 +1,0 @@
-export default function Affiliates(){return <div className='card'>Affiliate tracking placeholder (demo).</div>}

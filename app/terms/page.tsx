@@ -1,1 +1,0 @@
-export default function Terms(){return <div className='card'>Terms placeholder. Add jurisdiction-specific terms.</div>}

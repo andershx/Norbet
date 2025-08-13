@@ -1,2 +1,0 @@
-import { NextResponse } from "next/server"; import { getSession } from "@/lib/auth"; import { readDB, writeDB } from "@/lib/demo-db";
-export async function GET(){ const s = getSession(); const db = readDB(); const u = db.users[s.uid] || { id:s.uid, balance:100, vipPoints:0, clientSeed:'client' }; db.users[s.uid]=u; writeDB(db); return NextResponse.json({ balance: u.balance, vipPoints: u.vipPoints }); }
