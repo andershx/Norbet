@@ -1,28 +1,22 @@
-import Link from "next/link";
-import { GameCard } from "@/components/game/GameCard";
+import { HeroBanner } from "@/components/home/HeroBanner";
+import { GameThumb } from "@/components/game/GameThumb";
 
 export default function Home(){
   return (
     <div className="space-y-6">
-      <section className="hero">
-        <h1 className="text-3xl font-extrabold mb-2">Welcome to Norbet</h1>
-        <p className="text-ink/70 max-w-2xl">A vibrant, demo crypto casino UI with modern gradients and glass surfaces. Deploy-ready on Vercel. No real-money features enabled.</p>
-        <div className="flex gap-3 mt-6">
-          <Link href="/casino" className="btn">Enter Casino</Link>
-          <Link href="/deposit" className="btn btn-outline">Deposit (Test)</Link>
-        </div>
-      </section>
-
+      <HeroBanner />
       <section className="space-y-3">
         <div className="flex items-center justify-between">
-          <h2 className="font-semibold">Trending Games</h2>
-          <Link className="text-sm text-ink/70 hover:underline" href="/casino">See all</Link>
+          <h2 className="text-xl font-semibold">Trending Games</h2>
+          <a href="/casino" className="text-sm underline">See all</a>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <GameCard title="Dice" href="/casino#dice" tag="Classic"/>
-          <GameCard title="Crash" href="/casino#crash" tag="Hot"/>
-          <GameCard title="Mines" href="/casino#mines" tag="Chill"/>
-          <GameCard title="Limbo" href="/casino#limbo" tag="Low house edge"/>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <GameThumb href="/casino" title="Dice" img="/art/dice.svg" />
+          <GameThumb href="/casino#crash" title="Crash" img="/art/crash.svg" />
+          <GameThumb href="/casino#plinko" title="Plinko" img="/art/plinko.svg" />
+          <GameThumb href="/casino" title="Mines" img="/art/mines.svg" />
+          <GameThumb href="/casino" title="Limbo" img="/art/limbo.svg" />
+          <GameThumb href="/sports" title="Sports" img="/art/sports.svg" />
         </div>
       </section>
     </div>
