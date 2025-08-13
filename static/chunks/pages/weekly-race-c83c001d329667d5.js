@@ -1,0 +1,27 @@
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+    [5679], {
+        99608: function(n, u, _) {
+            (window.__NEXT_P = window.__NEXT_P || []).push(["/weekly-race", function() {
+                return _(29314)
+            }])
+        },
+        29314: function(n, u, _) {
+            "use strict";
+            _.r(u), _.d(u, {
+                __N_SSP: function() {
+                    return e
+                },
+                default: function() {
+                    return t.ZP
+                }
+            });
+            var t = _(84232),
+                e = !0
+        }
+    },
+    function(n) {
+        n.O(0, [5675, 3012, 2438, 6710, 7536, 2842, 8075, 5323, 8695, 7404, 4805, 2888, 9774, 179], function() {
+            return n(n.s = 99608)
+        }), _N_E = n.O()
+    }
+]);

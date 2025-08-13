@@ -1,0 +1,234 @@
+.ResultFeed_golden-text__r8Pdt {
+    background: linear-gradient(181.17deg, #ffd999 14.35%, #e49d26 99%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.ResultFeed_game-feed-container__RhRid {
+    width: 100%;
+    min-height: 250px;
+    font-family: var(--main-font)
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_live-tabs__yHMAk {
+    display: -webkit-flex;
+    display: flex;
+    border-radius: 6px;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    background-color: #262c52;
+    padding: 4px;
+    gap: 1px;
+    border: 1px solid hsla(0, 0%, 100%, .05);
+    margin-bottom: 30px
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_live-tabs-new-design__YvLLX {
+    background-color: #232847
+}
+
+.ResultFeed_game-feed-container__RhRid.ResultFeed_mobile-two___Now7 .ResultFeed_bet_amount__vxhmQ,
+.ResultFeed_game-feed-container__RhRid.ResultFeed_mobile-two___Now7 .ResultFeed_game_name__7IZCj,
+.ResultFeed_game-feed-container__RhRid.ResultFeed_mobile-two___Now7 .ResultFeed_multiplier__bTOxT {
+    display: none !important
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_game_name__7IZCj {
+    color: #7179a5;
+    font-size: 13px
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_container__k9YHD {
+    padding: 0 16px 16px;
+    border-radius: 12px;
+    background-color: #191f3b;
+    position: relative;
+    min-height: 250px;
+    border: 1px solid hsla(0, 0%, 100%, .05);
+    overflow: hidden
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_container-new-design__6UYy_ {
+    background-color: #232847
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_container__k9YHD .ResultFeed_empty__mKOEX {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 40px;
+    background-color: #191f3b;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    color: #7179a5;
+    font-weight: 700;
+    font-size: 14px;
+    min-height: 250px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_container__k9YHD .ResultFeed_empty-new-design__1bRBT {
+    background-color: transparent
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_header-display__ui5zG {
+    padding-bottom: 20px
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_header-display__ui5zG tr {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_header-display__ui5zG tr th {
+    width: 120px
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_payout-value__M2yQW {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: var(--main-font);
+    color: #7179a5
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_payout-value__M2yQW svg {
+    width: 13px
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_payout-display__FYsx5 {
+    display: -webkit-flex;
+    display: flex;
+    gap: 10px;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    font-family: var(--main-font)
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_payout-display__FYsx5 .ResultFeed_payout-value__M2yQW {
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    gap: 5px;
+    color: #7dd934
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_payout-display__FYsx5 .ResultFeed_payout-value__M2yQW svg {
+    width: 12px
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_payout-display__FYsx5.ResultFeed_negative__lzQwR .ResultFeed_payout-value__M2yQW {
+    color: #7179a5
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_payout-value-color__dk1N6 span {
+    color: #7dd934;
+    text-shadow: 0 0 15px rgba(125, 217, 52, .4)
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_lose-payout-value-color__wekui span {
+    color: #7179a5
+}
+
+.ResultFeed_game-feed-container__RhRid thead tr th:first-child {
+    text-align: left
+}
+
+.ResultFeed_game-feed-container__RhRid thead tr th:last-child {
+    text-align: right
+}
+
+.ResultFeed_game-feed-container__RhRid thead {
+    height: 50px;
+    font-size: 13px;
+    color: #7179a5
+}
+
+.ResultFeed_game-feed-container__RhRid tbody {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column
+}
+
+.ResultFeed_game-feed-container__RhRid tbody tr {
+    border-radius: 6px;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    justify-content: space-between
+}
+
+.ResultFeed_game-feed-container__RhRid tbody tr td {
+    vertical-align: middle
+}
+
+.ResultFeed_game-feed-container__RhRid td {
+    width: 120px
+}
+
+.ResultFeed_game-feed-container__RhRid .ResultFeed_with-icon__TRHht {
+    width: 50px;
+    margin: 0;
+    -webkit-align-items: center;
+    align-items: center
+}
+
+.ResultFeed_game-feed-container__RhRid tbody tr:nth-child(2n) {
+    background-color: #1b203b
+}
+
+.ResultFeed_game-feed-container__RhRid tbody tr td:first-child {
+    text-align: left
+}
+
+.ResultFeed_game-feed-container__RhRid tbody tr td:last-child {
+    text-align: right
+}
+
+.ResultFeed_game-feed-container__RhRid tbody tr td {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+@media screen and (min-width:1200px) {
+    .ResultFeed_game-feed-container__RhRid {
+        max-width: 1200px;
+        margin: auto
+    }
+}
+
+@media(max-width:1100px) {
+    .ResultFeed_game-feed-container__RhRid .ResultFeed_bet_amount__vxhmQ,
+    .ResultFeed_game-feed-container__RhRid .ResultFeed_multiplier__bTOxT {
+        display: none !important
+    }
+}
+
+@media(max-width:550px) {
+    .ResultFeed_game-feed-container__RhRid .ResultFeed_game_name__7IZCj {
+        display: none !important
+    }
+}
